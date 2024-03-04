@@ -1,15 +1,18 @@
 [tool.poetry]
 name = "strawberry_persisted_queries"
 packages = [{include = "strawberry_persisted_queries"}]
-version = "1.0.0"
+version = "1.0.1"
 description = ""
 authors = ["Rosalina <catgirl@catgirlin.space>"]
 readme = "README.md"
 
+[project.urls]
+Repository = "https://github.com/catgirlinspace/strawberry_persisted_queries.git"
+
 [tool.poetry.dependencies]
 python = "^3.10"
 strawberry-graphql = "0.220.0.dev.1709543239"
-django = {version = "^5.0.2", optional = true}
+django = {version = "^5.0.3", optional = true}
 
 
 [build-system]

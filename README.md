@@ -18,9 +18,24 @@ schema = strawberry.Schema(
 )
 ```
 
+### Django
+
 For Django, a Django cache backend is available.
 ```python
 from strawberry_persisted_queries.django_cache import DjangoPersistedQueryCache
 
 PersistedQueriesExtension(cache_backend=DjangoPersistedQueryCache())
+```
+
+### Safelisted Queries
+
+`DictSafelist` can be used to require persisted queries to already be saved.
+This can be used with a build tool to ensure only queries used by your app are available.
+
+```python
+from strawberry_persisted_queries.safelisting import DictSafelist
+
+PersistedQueriesExtension(safelist=DictSafelist({
+    'sha256Hash': 'query {...}',
+}))
 ```

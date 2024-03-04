@@ -91,13 +91,13 @@ test = ["pytest", "pytest-cov"]
 
 [[package]]
 name = "strawberry-graphql"
-version = "0.219.2"
+version = "0.220.0.dev1709543239"
 description = "A library for creating GraphQL APIs"
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "strawberry_graphql-0.219.2-py3-none-any.whl", hash = "sha256:6b26994bcf092714dbd6def4c69a36c279fbdbfdc2390fb6294728dd076ba863"},
-    {file = "strawberry_graphql-0.219.2.tar.gz", hash = "sha256:b7a9b3115398402ec04fceb76b0dd3908dd90009cf20d344071be985c039aac7"},
+    {file = "strawberry_graphql-0.220.0.dev1709543239-py3-none-any.whl", hash = "sha256:ff96de8da794c0624165d1b0e95cf87e46fdde0730e895d68c244e9a449fbb74"},
+    {file = "strawberry_graphql-0.220.0.dev1709543239.tar.gz", hash = "sha256:233ff9dddfe49eb1d4ed0959db0cd76c05609e7e5c8da474b9ee9ea19aee4a6f"},
 ]
 
 [package.dependencies]
@@ -152,4 +152,4 @@ django = ["django"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "873cc20f48e5f17892b7c42e41aac6cb25122971b0e3dc4c81bdabf7c585a2ea"
+content-hash = "7c0fee39d2b8c984c82d83223cf5b35950ba1fe2ba9bd2134317fee39773b7d6"

@@ -8,7 +8,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-strawberry-graphql = "^0.219.2"
+strawberry-graphql = "0.220.0.dev.1709543239"
 django = {version = "^5.0.2", optional = true}
 
 

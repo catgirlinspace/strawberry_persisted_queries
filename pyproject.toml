@@ -2,7 +2,7 @@
 name = "strawberry_persisted_queries"
 packages = [{include = "strawberry_persisted_queries"}]
 version = "1.0.3"
-description = ""
+description = "Apollo-compatible persisted queries for Strawberry"
 authors = ["Rosalina <catgirl@catgirlin.space>"]
 readme = "README.md"
 license = "MIT"

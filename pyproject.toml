@@ -1,19 +1,16 @@
 [tool.poetry]
 name = "strawberry_persisted_queries"
 packages = [{include = "strawberry_persisted_queries"}]
-version = "1.0.2"
+version = "1.0.3"
 description = ""
 authors = ["Rosalina <catgirl@catgirlin.space>"]
 readme = "README.md"
-
-[project]
-license = {file = "LICENSE"}
+license = "MIT"
 classifiers = [
+    "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
 ]
-
-[project.urls]
-Repository = "https://github.com/catgirlinspace/strawberry_persisted_queries.git"
+repository = "https://github.com/catgirlinspace/strawberry_persisted_queries.git"
 
 [tool.poetry.dependencies]
 python = "^3.10"

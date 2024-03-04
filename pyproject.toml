@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "strawberry_persisted_queries"
+packages = [{include = "strawberry_persisted_queries"}]
+version = "1.0.0"
+description = ""
+authors = ["Rosalina <catgirl@catgirlin.space>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+strawberry-graphql = "^0.219.2"
+django = {version = "^5.0.2", optional = true}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.extras]
+django = ["django"]

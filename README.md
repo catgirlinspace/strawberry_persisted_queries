@@ -13,7 +13,14 @@ from strawberry_persisted_queries import PersistedQueriesExtension
 schema = strawberry.Schema(
     query=Query,
     extensions=[
-        PersistedQueriesExtension,
+        PersistedQueriesExtension(),
     ],
 )
+```
+
+For Django, a Django cache backend is available.
+```python
+from strawberry_persisted_queries.django_cache import DjangoPersistedQueryCache
+
+PersistedQueriesExtension(cache_backend=DjangoPersistedQueryCache())
 ```

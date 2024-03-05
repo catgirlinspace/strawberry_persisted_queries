@@ -1,6 +1,7 @@
 # 🍓Strawberry Persisted Queries
 
 [![PyPI](https://img.shields.io/pypi/v/strawberry_persisted_queries?logo=pypi&logoColor=white&style=for-the-badge)](https://pypi.org/project/strawberry_persisted_queries/)
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/catgirlinspace?style=for-the-badge&logo=githubsponsors)](https://github.com/sponsors/catgirlinspace)
 
 Apollo-compatible persisted queries for Strawberry. 
 

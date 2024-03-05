@@ -6,7 +6,7 @@ Apollo-compatible persisted queries for Strawberry.
 
 ## Usage
 
-Add `PersistedQueriesExtension` to your extensions.
+Add `PersistedQueriesExtension()` to your extensions.
 
 ```python
 import strawberry
@@ -22,7 +22,7 @@ schema = strawberry.Schema(
 
 ### Django
 
-For Django, a Django cache backend is available.
+For Django users, a Django cache backend is available.
 ```python
 from strawberry_persisted_queries.django_cache import DjangoPersistedQueryCache
 

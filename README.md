@@ -23,7 +23,7 @@ schema = strawberry.Schema(
 
 ### Django
 
-For Django users, a Django cache backend is available.
+For Django users, a Django cache backend is available. This uses the default cache set in Django. 
 ```python
 from strawberry_persisted_queries.django_cache import DjangoPersistedQueryCache
 

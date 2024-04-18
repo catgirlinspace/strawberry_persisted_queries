@@ -32,7 +32,7 @@ PersistedQueriesExtension(cache_backend=DjangoPersistedQueryCache())
 ### Safelisted Queries
 
 `DictSafelist` can be used to require persisted queries to already be saved.
-This can be used with a build tool to ensure only queries used by your app are available.
+This can be used with a build tool to ensure only queries used within an app are available.
 
 ```python
 from strawberry_persisted_queries.safelisting import DictSafelist
@@ -40,4 +40,22 @@ from strawberry_persisted_queries.safelisting import DictSafelist
 PersistedQueriesExtension(safelist=DictSafelist({
     'sha256Hash': 'query {...}',
 }))
+```
+
+## Custom Cache Backends
+
+Custom cache backends allow using another cache for persisted queries, such as memcached or a database.
+Custom cache backends can inherit from `strawberry_persisted_queries.PersistedQueryCache`. 
+
+```python
+from strawberry_persisted_queries.cache import PersistedQueryCache
+
+class MyCache(PersistedQueryCache):
+    def get(self, query_hash):
+        return cache.get(query_hash)
+
+    def set(self, query_hash, value):
+        cache.set(query_hash, value)
+
+PersistedQueriesExtension(cache_backend=MyCache())
 ```
